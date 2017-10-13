@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>Tony Tracker</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var tufts = {lat:  42.407107, lng:-71.121395};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 50,
+          center: tufts
+        });
+        var marker = new google.maps.Marker({
+          position: tufts,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFBW3sdK2Jyp3IqwmDESjR3jAA4YCnPak&callback=initMap">
+    </script>
+  </body>
+</html>

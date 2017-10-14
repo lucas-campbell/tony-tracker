@@ -29,8 +29,9 @@
   	  <div id="map"></div>
   	  <script>
   	    function initMap() {
+	      var fs = require('fs');
   	      var tufts = {lat:  42.407107, lng:-71.121395};
-	
+	      
 	
 	        var map = new google.maps.Map(document.getElementById('map'), {
 	          zoom: 50,
@@ -53,22 +54,36 @@
 	
 	      function placeMarkerAndPanTo(latLng, map) {
 	      	var sightings = [];
+		var sightingJSON = {"markers":[]};
 	        var marker = new google.maps.Marker({
 	          position: latLng,
 	          map: map,
 	          icon: "tony_marker.png"
 	        });
 	        map.panTo(latLng);
+		
 	        sightings.push(latLng);
 
         	console.log(latLng.lat());
         	console.log(latLng.lng());
-
+		var count = 0;
         	for (var i in sightings) {
+		
         		alert(sightings[i]);
+			sightingJSON.markers.push({"num":count,"lat":i.lat,"lng":i.lng});
     
-      }
-	
+     		}
+		var myJSON = JSON.stringify(sightingJSON);
+		fs.writeFile('sighting.JSON', myJSON, 'utf8', callback);
+		fs.readFile('myjsonfile.json', 'utf8', function readFileCallback(err, data){
+    		if (err){
+      		  console.log(err);
+   		 } else {
+    		obj = JSON.parse(data); //now it an object
+    		obj.table.push({id: 2, square:3}); //add some data
+    		json = JSON.stringify(obj); //convert it back to json
+    		fs.writeFile('myjsonfile.json', json, 'utf8', callback); // write it back 
+}});
 	      }
 	    </script>
 	    <script async defer

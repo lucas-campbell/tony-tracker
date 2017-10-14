@@ -8,7 +8,7 @@ polymorphic crowd-sourced entity tracker (WHERE IN THE WORLD IS TONY MONACO?)
 - web deployment, mobile app
 
 # to use:
--git clone
--heroku login
--npm install
--heroku local or npm start
+- git clone
+- heroku login
+- npm install
+- heroku local or npm start

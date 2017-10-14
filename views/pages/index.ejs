@@ -49,7 +49,6 @@
 	      }
 	      function placeMarkerAndPanTo(latLng, map) {
 	      	var sightings = [];
-		var sightingObj = {"markers":[]};
 	        var marker = new google.maps.Marker({
 	          position: latLng,
 	          map: map,
@@ -60,8 +59,7 @@
 	        sightings.push(latLng);
 		var count = 0;
         	for (var i in sightings) {
-			sightingObj.markers.push({"num":count,"lat":i.lat,"lng":i.lng});
-			console.log(sightingObj);
+			console.log(i.lat + ',' + i.lng);
     
      		}
 		var myJSON = JSON.stringify(sightingObj);

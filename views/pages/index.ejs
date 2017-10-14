@@ -26,7 +26,8 @@
   		</head>
   		<body>
   	  <h3>Tony Tracker</h3>
-  	  <div id="map"></div>
+			<div id="map"></div>
+			<script src="bundle.js"></script>
   	  <script>
   	    function initMap() {
   	      var tufts = {lat:  42.407107, lng:-71.121395};
@@ -42,7 +43,6 @@
 	          map: map,
 	          icon: iconBase
 	        });
-					var mysql = require('mysql')
 	        // click listener
 	        map.addListener('click', function(e) {
 	          placeMarkerAndPanTo(e.latLng, map);

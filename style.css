@@ -4,14 +4,11 @@ body {
 
 h1 {
     color: rgb(81, 44, 25);
-    text-align: center;
-    font-size: 100px;
-    text-shadow: -1px 0 white, 0 1px white, 2px 0 white, 0 -1px white;
-    font-family: meta serif;
-    position: absolute;
-    top: 1%;
 
-  
+    font-size: 80px;
+    <!-- text-shadow: -1px 0 white, 0 1px white, 2px 0 white, 0 -1px white; -->
+    font-family: "comic sans ms";  
+ 	text-align: center;
 }
 
 p {
@@ -28,13 +25,14 @@ p {
     padding: 25px 35px;
     text-align: center;
     text-decoration: none;
-    display: block;
+    display: inline;
     font-size: 20px;
     font-family: "comic sans ms";
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     margin: 4px 2px;
     cursor: pointer;
+    width: 250px;
 }
 
 
@@ -46,9 +44,10 @@ p {
     text-align:center;
 	position: relative;
 	left: 5%
-    
+	top: 10%
 }
 .button1:hover {
 	background-color: white;
     color: rgb(81, 44, 25);  
 }
+

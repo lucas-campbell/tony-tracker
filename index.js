@@ -1,5 +1,4 @@
 var express = require('express');
-fs = require('fs');
 var app = express();
 
 app.set('port', (process.env.PORT || 5888));

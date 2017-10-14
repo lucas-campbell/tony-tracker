@@ -13,6 +13,9 @@ app.get('/', function(request, response) {
     response.render('pages/index')
 });
 
+app.listen(app.get('port'), function() {
+    console.log('Node app is running on port', app.get('port'));
+});
 var mysql = require('mysql');
 var connection = mysql.createConnection(process.env.JAWSDB_URL);
 
@@ -24,8 +27,4 @@ connection.query('SELECT 1 + 1 AS solution', function(err, rows, fields) {
   console.log('The solution is: ', rows[0].solution);
 });
 
-app.listen(app.get('port'), function() {
-    console.log('Node app is running on port', app.get('port'));
-});
-
-// connection.end();
+connection.end();

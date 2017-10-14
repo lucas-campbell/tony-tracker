@@ -45,12 +45,13 @@
 	        // click listener
 	        map.addListener('click', function(e) {
 	          placeMarkerAndPanTo(e.latLng, map);
+		  saveData(e.latLng);
 	        });
 	      }
 				var mysql = require('mysql');
 	      function placeMarkerAndPanTo(latLng, map) {
 	      	var sightings = [];
-		var sightingObj = {"markers":[]};
+		//var sightingObj = {"markers":[]};
 	        var marker = new google.maps.Marker({
 	          position: latLng,
 	          map: map,
@@ -66,8 +67,7 @@
 			sightingObj.markers.push({"num":count,"lat":i.lat,"lng":i.lng});
     
      		}
-		var myJSON = JSON.stringify(sightingObj);
-		
+		myJSON = JSON.stringify(sightingObj);
 	      }
 	    </script>
 	    <script async defer

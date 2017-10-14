@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var mysql = require('mysql');
+var browserify = require('browserify');
 
 app.set('port', (process.env.PORT || 5888));
 

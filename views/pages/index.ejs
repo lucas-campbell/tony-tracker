@@ -42,7 +42,7 @@
 	          map: map,
 	          icon: iconBase
 	        });
-	
+					var mysql = require('mysql')
 	        // click listener
 	        map.addListener('click', function(e) {
 	          placeMarkerAndPanTo(e.latLng, map);

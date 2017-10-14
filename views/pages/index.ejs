@@ -60,7 +60,8 @@
 	        sightings.push(latLng);
 		var count = 0;
         	for (var i in sightings) {
-			console.log(sightingObj.markers.push({"num":count,"lat":i.lat,"lng":i.lng}));
+			sightingObj.markers.push({"num":count,"lat":i.lat,"lng":i.lng});
+			console.log(sightingObj);
     
      		}
 		var myJSON = JSON.stringify(sightingObj);

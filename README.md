@@ -6,6 +6,9 @@ polymorphic crowd-sourced entity tracker (WHERE IN THE WORLD IS TONY MONACO?)
 - fading sighting icons over a period of time
 - or, polylines to track monaco in a family-circus-style animation
 - web deployment, mobile app
+- database to store markers
+- heatmap
+- store information along with markers: clothes, weather, what he's doing, etc
 
 # to use:
 - git clone

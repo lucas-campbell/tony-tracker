@@ -1,7 +1,6 @@
-{
-    "name": "Tony-Tracker",
-    "description": "polymorphic crowd-sourced entity tracker (WHERE IN THE WORLD IS TONY MONACO?)",
-    "repository": "https://github.com/lucas-campbell/tony-tracker.git",
-    "keywords": ["node", "express", "heroku", "tony", "monaco"]
-  }
-  
+// {
+//     "name": "Tony-Tracker",
+//     "description": "polymorphic crowd-sourced entity tracker (WHERE IN THE WORLD IS TONY MONACO?)",
+//     "repository": "https://github.com/lucas-campbell/tony-tracker.git",
+//     "keywords": ["node", "express", "heroku", "tony", "monaco"]
+//   }

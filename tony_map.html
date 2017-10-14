@@ -13,8 +13,10 @@
     <h3>Tony Tracker</h3>
     <div id="map"></div>
     <script>
+
       function initMap() {
         var tufts = {lat:  42.407107, lng:-71.121395};
+        
 
 
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -33,18 +35,38 @@
         // click listener
         map.addListener('click', function(e) {
           placeMarkerAndPanTo(e.latLng, map);
+          console.log(e);
         });
       }
 
       function placeMarkerAndPanTo(latLng, map) {
+        // store positions in an array
+        var sightings = [];
         var marker = new google.maps.Marker({
           position: latLng,
           map: map,
           icon: "tony_marker.png"
         });
         map.panTo(latLng);
+        sightings.push(latLng);
 
+        console.log(latLng.lat());
+        console.log(latLng.lng());
+
+        for (var i in sightings) {
+        alert(sightings[i]);
+        // display a marker on the map
       }
+      }
+
+
+
+      
+
+
+
+
+
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFBW3sdK2Jyp3IqwmDESjR3jAA4YCnPak&callback=initMap">

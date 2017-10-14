@@ -6,11 +6,10 @@
 <body>
 		<h1>Tony Macaroni</h1>
 		
-		<a href="foodtracker.html"><button class="button button1" onclick="showFood()">Food</button></a>
+		<button class="button button1"> Food    </button>
 		
 		<a href="danktracker.html"><button class="button button1"> Dank Animals</button></a>
-		<button class="button button1" onclick="showTony()">Tony Macaroni</button>
-
+		<a href="tonytracker.html"><button class="button button1" >Tony Macaroni</button></a>
 	<script>
 		function showTony(){
 			var x = document.getElementById("tonymap");
@@ -29,22 +28,21 @@
 			}
 		}
 	</script>
-	<div id="tonymap">
-		 <head>
-		    <style>
+	<div id="foodmap">
+	<head>
+    	<style>
     	   #map {
     	    height: 400px;
     	    width: 100%;
     	   }
     	</style>
-  		</head>
-  		<body>
-  	  <h3>Tony Tracker</h3>
+  	</head>
+  	<body>
+  	  <h3>Food tracker</h3>
   	  <div id="map"></div>
   	  <script>
   	    function initMap() {
   	      var tufts = {lat:  42.407107, lng:-71.121395};
-	
 	
 	        var map = new google.maps.Map(document.getElementById('map'), {
 	          zoom: 50,
@@ -69,7 +67,7 @@
 	        var marker = new google.maps.Marker({
 	          position: latLng,
 	          map: map,
-	          icon: "tony_marker.png"
+	          icon: "food_marker.png"
 	        });
 	        map.panTo(latLng);
 	
@@ -77,10 +75,11 @@
 	    </script>
 	    <script async defer
 	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFBW3sdK2Jyp3IqwmDESjR3jAA4YCnPak&callback=initMap">
-	    </script>
-	  </body>
-	
+	    	</script>
+	 		 </body>
 	</div>
+	
+	
 	
 
 </body>

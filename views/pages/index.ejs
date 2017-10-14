@@ -42,7 +42,11 @@
 	          map: map,
 	          icon: iconBase
 	        });
-	        // click listener
+		var locArr = [{lat: 42.407408, lng: -71.121413}, {lat: 42.407181, lng: -71.121616},{lat: 42.407069, lng: -71.121706}, {lat: 42.406982, lng: -71.121758}];
+		for (k in locArr) {
+			placeMarkerAndPanTo(locArr[k],map);
+		}
+		// click listener
 	        map.addListener('click', function(e) {
 	          placeMarkerAndPanTo(e.latLng, map);
 	        });
@@ -58,10 +62,6 @@
 		
 	        sightings.push(latLng);
 		var count = 0;
-        	for (var i in sightings) {
-			console.log(latLng.lat + ',' + latLng.lng);
-    
-     		}
 		var myJSON = JSON.stringify(sightingObj);
 		
 	      }

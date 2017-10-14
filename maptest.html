@@ -14,14 +14,40 @@
     <script>
       function initMap() {
         var tufts = {lat:  42.407107, lng:-71.121395};
+
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 50,
-          center: tufts
+          center: tufts,
+          mapTypeId: 'satellite'
         });
+        // also a new line to store the image file
+        //var image = 'tony_marker.png';
+        // also new line below
+        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
         var marker = new google.maps.Marker({
           position: tufts,
-          map: map
+          map: map,
+          // new line below. this essentially puts a parking icon but we want to make the marker tony's face in the placemarkerandpanto function
+          icon: iconBase
         });
+
+        // click listener
+        map.addListener('click', function(e) {
+          placeMarkerAndPanTo(e.latLng, map);
+        });
+      }
+
+      // creating the icon base NOT NEEDED???
+      //var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+      // puts another marker down
+      function placeMarkerAndPanTo(latLng, map) {
+        var marker = new google.maps.Marker({
+          position: latLng,
+          map: map,
+          icon: "tony_marker.png"
+        });
+        map.panTo(latLng);
+
       }
     </script>
     <script async defer

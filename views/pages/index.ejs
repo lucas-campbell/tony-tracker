@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" media="all" href="/stylesheets/style.css">
+</head>
+<body>
+	<div id="tonymap">
+		<h1>Tony Macaroni</h1>
+		<button class="button button1">Tony Macaroni</button><br /><br />
+		<button class="button button1">     Food    </button><br /><br />
+		<button class="button button1"> Dank Animals</button>
+		   <style>
+    	   #map {
+    	    height: 400px;
+    	    width: 100%;
+    	   }
+    	</style>
+ 	 </head>
+	  <body>
+    <h3>Tony Tracker</h3>
+  	  <div id="map"></div>
+  	  <script>
+    	  function initMap() {
+       	 var tufts = {lat:  42.407107, lng:-71.121395};
+
+
+  	      var map = new google.maps.Map(document.getElementById('map'), {
+    	      zoom: 50,
+    	      center: tufts,
+    	      mapTypeId: 'satellite'
+    	    });
+        
+    	    var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+    	    var marker = new google.maps.Marker({
+    	      position: tufts,
+    	      map: map,
+    	      icon: iconBase
+    	    });
+	
+	        // click listener
+	        map.addListener('click', function(e) {
+	          placeMarkerAndPanTo(e.latLng, map);
+	        });
+	      }
+	
+	      function placeMarkerAndPanTo(latLng, map) {
+	        var marker = new google.maps.Marker({
+	          position: latLng,
+	          map: map,
+	          icon: "tony_marker.png"
+	        });
+	        map.panTo(latLng);
+	
+	      }
+	    </script>
+	    <script async defer
+	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFBW3sdK2Jyp3IqwmDESjR3jAA4YCnPak&callback=initMap">
+	    </script>
+	</div>
+</body>
+</html>

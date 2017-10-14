@@ -1,0 +1,32 @@
+{
+  "name": "tony-tracker",
+  "version": "1.0.0",
+  "description": "polymorphic crowd-sourced entity tracker (WHERE IN THE WORLD IS TONY MONACO?)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lucas-campbell/tony-tracker.git"
+  },
+  "engines": {
+    "node": "6.11.4",
+    "npm": "3.10.10"
+  },
+  "main": "javascript_test.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "ejs": "2.5.6",
+    "express": "4.16.2"
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucas-campbell/tony-tracker/issues"
+  },
+  "homepage": "https://github.com/lucas-campbell/tony-tracker#readme"
+}

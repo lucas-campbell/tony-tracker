@@ -1,0 +1,31 @@
+{ "markers" : [' +
+					'{ "type":"tony", "lat":42.395428 , "lon":-71.142483, "num": 1},' +
+					'{ "name":"Davis", "lat":42.39674 , "lon":-71.121815, "num": 2},' +
+					'{ "name":"Porter", "lat":42.3884 , "lon":-71.119148999999999, "num": 3},' +
+					'{ "name":"Harvard", "lat":42.373362 , "lon":-71.118956, "num": 4},' +
+					'{ "name":"Central", "lat":42.365486 , "lon":-71.103802, "num": 5},' +
+					'{ "name":"Kendall/MIT", "lat":42.36249079 , "lon":-71.08617653, "num": 6},' +
+					'{ "name":"Charles/MGH", "lat":42.361166 , "lon":-71.070628, "num": 7},' +
+					'{ "name":"Park Street", "lat":42.35639457 , "lon":-71.0624242, "num": 8},' +
+					'{ "name":"Downtown Crossing", "lat":42.355518 , "lon":-71.060225, "num": 9},' +
+					'{ "name":"South Station", "lat":42.352271 , "lon":-71.05524200000001, "num": 10},' +
+					'{ "name":"Broadway", "lat":42.342622 , "lon":-71.056967, "num": 11},' +
+					'{ "name":"Andrew", "lat":42.330154 , "lon":-71.057655, "num": 12},' +
+					'{ "name":"JFK/UMass", "lat":42.320685 , "lon":-71.052391, "num": 13},' +
+					'{ "name":"Savin Hill", "lat":42.31129 , "lon":-71.053331, "num": 14},' +
+					'{ "name":"Fields Corner", "lat":42.300093 , "lon":-71.061667, "num": 15},' +
+					'{ "name":"Shawmut", "lat":42.29312583 , "lon":-71.06573796000001, "num": 16},' +
+					'{ "name":"Ashmont", "lat":42.284652 , "lon":-71.06448899999999, "num": 17},' +
+					'{ "name":"North Quincy", "lat":42.275275 , "lon":-71.029583, "num": 18},' +
+					'{ "name":"Wollaston", "lat":42.2665139 , "lon":-71.0203369, "num": 19},' +
+					'{ "name":"Quincy Center", "lat":42.251809 , "lon":-71.005409, "num": 20},' +
+					'{ "name":"Quincy Adams", "lat":42.233391 , "lon":-71.007153, "num": 21},' +
+					'{ "name":"Braintree", "lat":42.2078543 , "lon":-71.0011385, "num": 22}' +
+					']}
+marker({"markers":[
+{"type":"tony","locations":
+[{"num":0,"lat":" ","lng":" "}, {"num":1,"lat":" ", lng:" "}]
+}, 
+{"type":"food","locations":
+[{"num":0,"lat":" ","lng":" "}]
+},

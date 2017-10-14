@@ -6,3 +6,9 @@ polymorphic crowd-sourced entity tracker (WHERE IN THE WORLD IS TONY MONACO?)
 - fading sighting icons over a period of time
 - or, polylines to track monaco in a family-circus-style animation
 - web deployment, mobile app
+
+# to use:
+-git clone
+-heroku login
+-npm install
+-heroku local or npm start

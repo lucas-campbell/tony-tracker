@@ -52,12 +52,22 @@
 	      }
 	
 	      function placeMarkerAndPanTo(latLng, map) {
+	      	var sightings = [];
 	        var marker = new google.maps.Marker({
 	          position: latLng,
 	          map: map,
 	          icon: "tony_marker.png"
 	        });
 	        map.panTo(latLng);
+	        sightings.push(latLng);
+
+        	console.log(latLng.lat());
+        	console.log(latLng.lng());
+
+        	for (var i in sightings) {
+        		alert(sightings[i]);
+    
+      }
 	
 	      }
 	    </script>

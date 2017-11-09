@@ -27,7 +27,7 @@
   		<body>
   	  <h3>Tony Tracker</h3>
 			<div id="map"></div>
-  	  <script>
+  	  <script src="markerArr.js">
   	    function initMap() {
   	      var tufts = {lat:  42.407107, lng:-71.121395};
 	        var map = new google.maps.Map(document.getElementById('map'), {
@@ -46,7 +46,7 @@
 	        map.addListener('click', function(e) {
 	          placeMarkerAndPanTo(e.latLng, map);
 	        });
-		var locArr = [{lat: 42.407408, lng: -71.121413}, {lat: 42.407181, lng: -71.121616},{lat: 42.407069, lng: -71.121706}, {lat: 42.406982, lng: -71.121758}];
+		// var locArr = [{lat: 42.407408, lng: -71.121413}, {lat: 42.407181, lng: -71.121616},{lat: 42.407069, lng: -71.121706}, {lat: 42.406982, lng: -71.121758}];
 		for (k in locArr) {
 		console.log(locArr);
 			placeMarkerAndPanTo(locArr[k],map);

@@ -5,9 +5,9 @@
 </head>
 <body>
 		<h1>Tony Macaroni</h1>
-		<audio autoplay loop>
+		<!-- <audio autoplay loop>
 			<source src="astley.mp3">
-		</audio>
+		</audio> -->
 		<div style="text-align:center;">
 		<a href="foodtracker.html"><button class="button button1" >Food</button></a>
 		
@@ -65,8 +65,17 @@
 	        // sightings.push(latLng);
 		//var count = 0;
 		//var myJSON = JSON.stringify(sightingObj);
-		
 	      }
+	      /* mysql test */
+	      var connection = mysql.createConnection(process.env.JAWSDB_URL);
+	      connection.connect(function(err) {
+      		if (err) {
+      			console.error('error connecting', + err.stack);
+      			return;
+      		}
+      		console.log('connected as id', + connection.threadId);
+	      });
+
 	    </script>
 	    <script async defer
 	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFBW3sdK2Jyp3IqwmDESjR3jAA4YCnPak&callback=initMap">

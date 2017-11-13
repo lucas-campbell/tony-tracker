@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-// var mysql = require('mysql');
+var mysql = require('mysql');
 // var browserify = require('browserify');
 // var b = browserify();
 // b.add('requires.js');

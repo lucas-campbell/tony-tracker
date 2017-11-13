@@ -1,9 +1,9 @@
 var express = require('express');
 var app = express();
 // var mysql = require('mysql');
-var browserify = require('browserify');
-var b = browserify();
-b.add('mysqltest.js');
+// var browserify = require('browserify');
+// var b = browserify();
+// b.add('mysqltest.js');
 // b.bundle().pipe(process.stdout);
 
 app.set('port', (process.env.PORT || 5888));

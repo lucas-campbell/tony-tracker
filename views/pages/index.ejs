@@ -67,6 +67,7 @@
 		//var myJSON = JSON.stringify(sightingObj);
 	      }
 	      /* mysql test */
+	      var mysql = require('mysql');
 	      var connection = mysql.createConnection(process.env.JAWSDB_URL);
 	      connection.connect(function(err) {
       		if (err) {

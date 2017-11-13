@@ -27908,7 +27908,7 @@ function ConnectionConfig(options) {
     options = ConnectionConfig.parseUrl(options);
   }
 
-  this.hostname               = options.hostname || 'localhost';
+  this.host               = options.host || 'localhost';
   this.port               = options.port || 3306;
   this.localAddress       = options.localAddress;
   this.socketPath         = options.socketPath;

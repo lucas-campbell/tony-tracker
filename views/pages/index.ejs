@@ -66,7 +66,10 @@
 		//var count = 0;
 		//var myJSON = JSON.stringify(sightingObj);
 	      }
-	      /* mysql test */
+
+	    </script>
+	    <script type="text/javascript">
+	    	/* mysql test */
 	      var mysql = require('mysql');
 	      var connection = mysql.createConnection(process.env.JAWSDB_URL);
 	      connection.connect(function(err) {
@@ -76,7 +79,6 @@
       		}
       		console.log('connected as id', + connection.threadId);
 	      });
-
 	    </script>
 	    <script async defer
 	    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFBW3sdK2Jyp3IqwmDESjR3jAA4YCnPak&callback=initMap">
